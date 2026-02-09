@@ -96,4 +96,48 @@
 // console.log(lookups("name"));
 
 
+// Testing Objects For Properties
+// var myObj = {
+//     "gift":"pony",
+//     "pet":"kitten",
+//     "bed":"sleigh",
+// };
+
+// function checkObj(checkProp){
+//     if(myObj.hasOwnProperty(checkProp)){
+//         return myObj[checkProp]
+//     }else{
+//         return "Not Found"
+//     }
+// };
+// console.log(checkObj("gift"));
+
+
+
+// Manipulating Complex Objects
+// var friendsData = [
+//     {
+//         "name":"Ali",
+//         "caste":"Kalwar",
+//         "age":20,
+//         "skill":[
+//             "AI Engineer",
+//             "Data Scienist"
+//         ],
+//     },
+//     {
+//         "name":"Ali",
+//         "caste":"Kalwar",
+//         "age":20,
+//         "skill":[
+//             "AI Engineer",
+//             "Data Scienist"
+//         ],
+//     }
+// ]
+// console.log(friendsData[0].name);
+
+
+
+
 
