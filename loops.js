@@ -121,3 +121,15 @@
 //     return Math.random();
 // };
 // console.log(randomFractions());
+
+
+
+// Genrate Random Whole Numbers
+// function randomWholeNum(){
+//     return Math.floor(Math.random() * 20);
+// };
+// console.log(randomWholeNum());
+
+
+
+// Genrate Random Whole Numbers within a Rang
