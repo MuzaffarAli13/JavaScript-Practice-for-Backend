@@ -133,3 +133,41 @@
 
 
 // Genrate Random Whole Numbers within a Rang
+// function randomNum(myMin,myMax){
+
+//     return Math.floor(Math.random() * (myMax - myMin + 1)) + myMin;
+// };
+// console.log(randomNum(5,15));
+
+
+// Use The PerseInt Function
+// function convetIntoNumber(str){
+//    return parseInt(str); 
+
+// };
+// console.log(convetIntoNumber("10"));
+
+
+// UseThe ParseInt function with the Radix (Binary read)
+// function convetIntoInteger(str){
+//     return parseInt(str,2);
+// };
+// console.log(convetIntoInteger("10112"));
+
+
+
+// Use The Conditional Ternary Numbers
+// function checkEqual(a,b){
+    //     return a === b ? true : false
+    // };
+    // console.log(checkEqual(20,20));
+    
+    
+// Use Multiple Conditional Ternary Numbers
+// function checkSign(num){
+//     return num > 0 ? "Positvie" : num < 0 ? "Negative" : "Zero";
+// }
+// console.log(checkSign(10));
+
+
+
