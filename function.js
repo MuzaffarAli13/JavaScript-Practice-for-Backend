@@ -204,3 +204,63 @@
 // console.log(getTomForcast(LOCALFORCAST));
 
 
+// Destrucuring Assignment with Arry
+// let [x,y,,r] = [1,2,3,4,5,6];
+
+// let a = 8,b = 6
+// console.log(a,b);
+
+// (()=>{
+//     [a,b] = [b,a]
+// })()
+
+// console.log(a);
+
+
+
+// Use Destruntring with the rest operator
+// let source = [1,2,3,4,5,6,7,8,9,10];
+// function removeFristTwo(list){
+//     let [ , , ...arr] = list;
+//     return arr;
+// };
+// console.log(removeFristTwo(source));
+
+
+
+// Use Destruntring Assignemt Pass an Object as a function parameters
+// let stats = {
+//     max : 300,
+//     min : 200,
+// };
+// function half({min,max}){
+//     return (max + min) / 2.0;
+// };
+// console.log(half(stats));
+
+
+
+// Create strings Using Template Literals
+// let name = "Muzaffar Ali";
+// let caste = "kalwar";
+// let greeting = `hi my name is ${name} my cast is ${caste}
+// and i am web developer`;
+// console.log(greeting);
+
+// Challenge
+let result = {
+    failure:["No var","Var on Top","Line Break"],
+    succes:["Done","underine","Bold"]
+};
+
+function makeList(list){
+  let resultData = [];
+  for(let i=0; i < list.length ; i++){
+    resultData.push(`<li class="text-warning">${list[i]}</li>`)
+  };
+  return resultData
+}
+
+let res = makeList(result.failure);
+console.log(res);
+
