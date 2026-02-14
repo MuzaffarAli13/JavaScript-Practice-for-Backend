@@ -112,3 +112,54 @@
 
 
 
+// map
+// Yaad rakho: map() naya array return karta hai, original array change nahi hota!
+// const numbers = [1, 2, 3, 4, 5]
+// let double = numbers.map((num)=>num*2);
+// console.log(double);
+
+// let students = ["ali","khan","ahmed"];
+// let upperCase = students.map((student)=>student.toUpperCase());
+// console.log(upperCase);
+
+
+// filter() — condition ke hisaab se elements chuno
+// let numbers = [10,20,30,40,50,60];
+// let bigNumber = numbers.filter((number)=> number > 30);
+// console.log(bigNumber);
+
+
+// const students = [
+//     { name: "Ali",   marks: 80 },
+//     { name: "Sara",  marks: 35 },
+//     { name: "Ahmed", marks: 65 },
+//     { name: "Bilal", marks: 28 }
+// ];
+
+// let passingStudents = students.filter((std)=>std.marks >= 40)
+// console.log(passingStudents);
+
+
+
+// find()
+// const students = [
+//     { name: "Ali",   marks: 80 },
+//     { name: "Sara",  marks: 35 },
+//     { name: "Ahmed", marks: 65 },
+// ];
+
+// let std = students.find((student)=>student.name === "Ali");
+// console.log(std);
+
+
+// reduce() — sab values ko ek value mein convert karo
+// const numbers = [10, 20, 30, 40];
+
+// // Sab ka total nikalo
+// const total = numbers.reduce((sum, num) => sum + num, 0);
+// console.log(total); // 100
+
+// // 0 matlab — sum ki starting value 0 hai
+
+
+// 2. ES6+ Features

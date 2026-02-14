@@ -186,29 +186,133 @@
 // };
 // console.log(checkVal(8));
 
-let  my_data = [
-    {
-    name:"Muzaffar",
-    id:"828392",
-    score:90
-    },
-     {
-    name:"khan",
-    id:"8392",
-    score:97
-    },
-     {
-    name:"Zaffar",
-    id:"828",
-    score:97
-    },
+// let  my_data = [
+//     {
+//     name:"Muzaffar",
+//     id:"828392",
+//     score:90
+//     },
+//      {
+//     name:"khan",
+//     id:"8392",
+//     score:97
+//     },
+//      {
+//     name:"Zaffar",
+//     id:"828",
+//     score:97
+//     },
 
-]
+// ]
 
-let data = ()=>{
-    let res = my_data
-   return res.length > 0 ? res : "Data Not Found" ; 
-};
+// let data = ()=>{
+//     let res = my_data
+//    return res.length > 0 ? res : "Data Not Found" ; 
+// };
 
-console.log(data());
+// console.log(data());
 
+
+// TAsks
+//  Task 1 — Variables & Data Types
+let dashes = "----------------------------";
+
+// let myData = {
+//     name:"Muzaffar",
+//     age:20,
+//     city:"Ghotki"
+// };
+
+// console.log(`My name is ${myData.name}\nmy age is ${myData.age}\nand my city is ${myData.city}`);
+
+
+// let fruits = ["Apple","Orange","Bananas"];
+// console.log(fruits[2]);
+
+// console.log(dashes);
+
+
+// //  Task 2 — Conditions
+// let temperature = 30;
+// if(temperature > 35){
+//     console.log("Bohot garmi hai!");
+// }else if(temperature > 20){
+//     console.log("Mausam theek hai");
+// }else{
+//     console.log("Thand hai!"); 
+// }
+
+// console.log(dashes);
+
+
+// //  Task 3 — Loops
+// // Method 1
+// const cities = ["Karachi", "Lahore", "Islamabad", "Peshawar", "Quetta"];
+// let count = 1;
+// for (const element of cities) {
+//     console.log(`${count}: ${element}`);
+//     count++
+// }
+// console.log(dashes);
+
+// // Method 2 easy
+// for(let i=0 ; i <cities.length; i++){
+//     console.log(`${i+1}: ${cities[i]}`);
+// }
+
+
+// console.log(dashes);
+
+// // Task 4 — Functions
+// function calculateBill(itemName, price, quantity){
+//     return `${itemName} ki total bill: ${(price * quantity)}`
+// }
+// console.log(calculateBill("chai",100,1));
+// console.log(calculateBill("roti",100,2));
+// console.log(calculateBill("biryani",160,3));
+
+// console.log(dashes);
+
+
+// //  Task 5 — Sab Mila Kar (Final Task) ⭐
+// const students = [
+//   { name: "Ali", marks: 90 },
+//   { name: "Sara", marks: 45 },
+//   { name: "Ahmed", marks: 72 },
+//   { name: "Zara", marks: 60 },
+//   { name: "Bilal", marks: 33 }
+// ];
+
+// function checkGrade(marks){
+
+//     if(marks >= 80){
+//         return "A Grade"
+//     }else if(marks >=60 && marks <= 79){
+//         return "B Grade"
+//     }else if(marks >=40 && marks <= 59){
+//         return "C Grade"
+//     }else{
+//        return "fail"
+//     }
+
+// };
+// for(let i=0 ; i < students.length;i++){
+//    let res =  checkGrade(students[i].marks)
+//    console.log(`${students[i].name} Grade ${res}`);
+// }
+
+
+
+
+
+const fruits = ["mango", "apple", "banana"];
+
+// old (loop)
+// for (let i = 0; i < fruits.length; i++) {
+//     console.log(fruits[i]);
+// }
+
+// new way — forEach
+fruits.forEach((fruit)=>{
+    console.log(fruit);
+})
