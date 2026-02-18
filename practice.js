@@ -480,3 +480,162 @@ let dashes = "----------------------------";
 // console.log(name, age); // Sara 25 (default value)
 
 
+//  PAPER — Complete Questions 
+// Section A — Operators
+// Q1. Do numbers lo a = 15, b = 4 aur yeh sab print karo: addition, subtraction, multiplication, division, remainder aur power.
+// let a = 15 , b = 4
+// console.log(a + b);
+// console.log(a - b);
+// console.log(a * b);
+// console.log(a ** b);
+// console.log(a / b);
+// console.log(a % b);
+
+// Q2. Check karo ke ek number even hai ya odd (% operator use karo).
+// function evenOdd(num){
+//     if (num % 2 === 0){
+//         console.log("Even Number");
+//     }else{
+//         console.log("Odd Number");
+//     }
+// }
+// evenOdd(10)
+// let evenOdd = (num)=> num % 2 === 0 ? "Even" : "Odd";
+// console.log(evenOdd(10));
+
+
+
+// Section B — Objects & Strings
+// Q3. Apna ek object banao jisme name, age, city, hobby hon aur ek introduce() method bhi ho jo yeh print kare: "Mera naam X hai, meri umar Y hai..."
+// let myData = {
+//     name:"Muzaffar Ali",
+//     age:20,
+//     city:"karachi",
+//     hobby:"Reading",
+//     introduce(){
+//         return `My Name is  ${this.name} i'm ${this.age} my city is ${this.city} and my hobby is ${this.hobby}`
+//     }
+// };
+// console.log(myData);
+// console.log(myData.introduce());
+
+
+
+// Q4. Ek string lo "javascript is awesome" aur yeh karo:
+
+// Uppercase mein print karo
+// "awesome" ko "amazing" se replace karo
+// Space se split karke array banao
+// Check karo ke "java" include hai ya nahi
+
+
+// let str = "javascript is awesome";
+// console.log(str.toUpperCase());
+// console.log(str.replace("awesome","amazig"));
+// console.log(str.split(" "));
+// console.log(str.includes("java"));
+
+
+// // Section C — Array Methods
+// // Q5. Products ki is list se sirf woh nikalo jinki price 500 se zyada ho (filter), phir unki prices mein 10% izafa karo (map), phir total nikalo (reduce):
+// const products = [
+//     { name: "Pen",    price: 50  },
+//     { name: "Bag",    price: 800 },
+//     { name: "Book",   price: 300 },
+//     { name: "Laptop", price: 50000 },
+//     { name: "Eraser", price: 20  }
+// ];
+// let greterThanFiveTh = products.filter((product)=>product.price > 500);
+// let add_10 = greterThanFiveTh.map((pro)=> Math.floor(pro.price * 1.10));
+// let total = add_10.reduce((pre,num) => pre + num,0);
+// console.log(greterThanFiveTh);
+// console.log(add_10);
+// console.log(total);
+
+
+
+// Section D — Scope & Error Handling
+// Q6. try/catch use karke ek function banao getUser(id) jo:
+
+// Agar id 0 ho to error throw kare: "Invalid ID!"
+// Warna user ka naam return kare
+// function getUser(id){
+//     if(id === 0){
+//         throw new Error("Invalid ID!");
+//     }
+//     return "Ali"
+// };
+
+// try{
+//     console.log(getUser(1));
+//     console.log(getUser(0));
+//     console.log("Yeh line nahi chalegi"); // Skip ho jayegi
+// }catch(error){
+//     console.log(error.message);
+// }finally{
+//     console.log("Best Of Luck");
+// }
+
+
+// Section E — Async/Await
+// Q7. Ek async function banao placeOrder(item) jo:
+
+// Pehle print kare: "Order aa raha hai..."
+// 2 second wait kare (setTimeout + Promise)
+// Phir print kare: "[item] ka order deliver ho gaya! ✅"
+
+// function wait(second){
+//     return new Promise((resolve)=>{
+//         setTimeout(resolve,second * 1000)
+//     }) 
+// }
+// async function placeOrder(item) {
+//      console.log("Order aa raha hai...");
+//      await wait(2);
+//      console.log(`${item} order succesfuly completed`);
+// }
+// placeOrder("t-shirt")
+
+
+// async function correct(item) {
+//     console.log("Start");
+    
+//     await new Promise(resolve => setTimeout(resolve, 2000));
+    
+//     console.log("End");
+//     console.log("Function khatam!");
+// }
+// correct("test");
+
+
+
+// Section F — Closures
+// Q8. Ek closure banao makeMultiplier(x) jo ek function return kare — woh function koi bhi number le aur use x se multiply kare:
+// function makeMultiplier(x) {
+    
+//     return function(num) {
+//         return num * x
+//     };
+// }
+// let double = makeMultiplier(2);
+// console.log(double(10));
+
+
+// Async
+// function wait(second){
+//     return new Promise((res)=>{
+//         setTimeout(res,second * 1000)
+//     })
+// };
+
+// async function main(){
+//     console.log("start");
+//     await wait(1);
+//     console.log("Midle");
+//     await wait(1);
+//     console.log("end");
+// };
+
+// main()
+
+
