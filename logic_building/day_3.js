@@ -1,4 +1,3 @@
-// Day 2: Arrays Deep Dive
 // 1. Remove duplicates [1,2,2,3,4,4,5] → [1,2,3,4,5]
 let arr = [1,2,2,3,4,4,5];
 function removeDuplicates(arr){
