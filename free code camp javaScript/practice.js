@@ -820,3 +820,149 @@ let dashes = "----------------------------";
 
 // console.log(add(2, 3) * 10);
 // const add = (a, b) => a + b;
+
+
+// Array
+// map()
+// Har element pe koi kaam karo — naya array return karta hai:
+// let numbers = [1,2,3,4,5];
+// let double = numbers.map((num)=> num * 2);
+// console.log(double);
+// console.log(numbers);
+
+//  filter()
+// Condition ke hisaab se elements filter karo:
+// let num = [1,2,3,4,5,6,7,8,9];
+// let even = num.filter((num)=> num % 2 === 0);
+// console.log(even);
+// let odd = num.filter((num)=> num % 2 !==0);
+// console.log(odd);
+
+
+// reduce()
+// Saare elements ko ek value mein convert karo:
+// let num = [1,2,3,4,5];
+// let sum = num.reduce((sum,num)=> sum+num,0);
+// console.log(sum);
+
+
+// find
+// let users = [
+//     {
+//         name:"Ali",
+//         age:20,
+//     },
+//     {
+//         name:"Muzaffar",
+//         age:30
+//     }
+// ];
+// let user = users.find((user)=>user.name === "Ali");
+// findindex
+// let userIndex = users.findIndex((user)=>user.name === "Ali");
+// console.log(userIndex,user);
+
+
+// // includes()
+// let num = [1,2,3,4,5,6,7,8];
+// console.log(num.includes(3));
+// console.log(num.includes(13));
+
+
+// sort()
+// let users = ["usman","khan","ali","muzafar"];
+// console.log(users.sort());
+
+// Numbers k lia sort
+// let num = [3,4,3,2,5,4,1,2,5]
+// let assending = num.sort((a,b)=>a-b)
+// let deseending = num.sort((a,b)=>b-a);
+// console.log(assending);
+// console.log(deseending);
+
+
+
+// spread operator ...
+// let arr1 = [1,2,3]
+// let arr2 = [4,5,6]
+// let combine = [...arr1,...arr2]
+// console.log(combine);
+
+// let num = [1,2,3];
+// let copy = [...num];
+// copy.push(4);
+// console.log(num);
+// console.log(copy);
+
+
+// forEach()
+// Har element pe kaam karo — kuch return nahi karta:
+// let frds = ["Ali","Khan","Aftab"];
+// frds.forEach((f)=>{
+//    console.log(f);
+// })
+
+
+// map vs forEach:
+
+// map = naya array return karta hai ✅
+// forEach = sirf loop karta hai, kuch return nahi ❌
+
+// Q3: Array destructuring kya hai? — ES6 🎯
+// let fruits = ["Apple","Bannas","Mango"];
+// let [a] = fruits
+// console.log(a);
+
+// Object mein values add/update/delete kaise karein?
+// let obj = {
+//     name:"muzaffar",
+//     age:20
+// };
+// // console.log(obj.name); // access
+// // console.log(obj["name"]);// access
+
+// // add
+// obj.city = "Karachi";
+// console.log(obj);
+
+// // update
+// obj.age = 18
+// console.log(obj);
+
+// // Delete
+// delete obj.city
+// console.log(obj);
+
+
+// Q4: Object methods kya hote hain?
+// A:Object ke andar function ho toh usse method kehte hain:
+// let person = {
+//     name:"Muzaffar",
+//     age:20,
+//     greet : function(){
+//        console.log("Salam", this.name);
+//     }
+// };
+// person.greet()
+
+
+// Object destructuring kya hai? — ES6 
+// let person = {
+//     name:"Muzaffar Ali",
+//     age:20,
+//     city:"ghotki"
+// };
+
+// Old way
+// let name = person.name
+// but new way  destructuing
+// let {name,city,age} = person;
+// console.log(name,age,city);
+
+// Rename bhi kar sakte ho:
+// let {name:userName} = person;
+// console.log(userName);
+
+
+// Q6: Spread operator Objects mein 
+let person = {name:"Muzaffar",age:20};
