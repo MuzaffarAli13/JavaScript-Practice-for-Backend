@@ -989,9 +989,81 @@ let dashes = "----------------------------";
 
 
 // Q8: Object loop kaise karein
-let person = { name: "Ali", age: 25 };
+// let person = { name: "Ali", age: 25 };
 
-// for in loop
-for(let key in person){
-    console.log(key, person[key]);
-}
+// // for in loop
+// for(let key in person){
+//     console.log(key, person[key]);
+// }
+
+
+// Q9: Optional Chaining ?. — Modern JS
+// let person = {
+//     name:"Muzaffar",
+//     age:20,
+//     address:{
+//         city:"ghtoki"
+//     }
+// }
+
+// console.log(person.address.city);
+// console.log(person.phone?.number); // optional value
+
+
+
+// let user = {
+//   name: "Ali",
+//   age: 25,
+//   city: "Lahore"
+// };
+
+// let { name, ...rest } = user;
+
+// console.log(name);
+// console.log(rest);
+
+
+// let obj1 = { name: "Ali", age: 25 };
+// let obj2 = { age: 30, city: "Lahore" };
+
+// let result = { ...obj1, ...obj2 };
+
+// console.log(result);
+
+// let users = [
+//   { name: "Ali", score: 80 },
+//   { name: "Ahmed", score: 95 },
+//   { name: "Usman", score: 70 },
+// ];
+
+// let result = users
+//   .sort((a, b) => b.score - a.score)
+//   .map(user => user.name);
+
+// console.log(result);
+
+// : Synchronous vs Asynchronous kya hota hai?
+// Synchronous — ek kaam khatam phir doosra:
+// console.log(1);
+// console.log(2);
+// console.log(3);
+
+// Asynchronous — kaam chhodo, aage badho, baad mein wapas aao:
+// console.log(1);
+// setTimeout(()=>{
+//     console.log(2);
+// },2000)
+// console.log(3);
+
+
+// Q2: Callback kya hai? Aur problem kya hai?
+// function getData(callback){
+//     setTimeout(()=>{
+//         callback("Data mil gai..")
+//     },2000)
+// };
+
+// getData(function(data){
+//     console.log(data);
+// })
+
